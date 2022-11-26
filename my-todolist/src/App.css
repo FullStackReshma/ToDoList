@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 
 .header {
   flex: 30%;
-  background-color: rgba(71, 166, 255, 0.906);
+  background-color: plum;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -23,10 +23,10 @@ body {
 
 .header .inputContainer {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 
-.header .input {
+.header input {
   width: 200px;
   height: 40px;
   border: none;
@@ -39,7 +39,7 @@ body {
 
 .header button {
   width: 70px;
-  height: 42px;
+  height: 87px;
   border: none;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
@@ -48,7 +48,48 @@ body {
 }
 
 .todoList {
-  flex: 90%;
+  flex: 70%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
 }
 
+.task {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  color: black;
+  margin: 15px;
+}
+
+.task .content {
+  flex: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task .content span {
+  display: grid;
+  place-items: center;
+  border: 1px solid white;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  border-right: none;
+  background-color: plum;
+}
+
+.task button {
+  flex: 20%;
+  height: 100%;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.201);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: black;
+  cursor: pointer;
+}

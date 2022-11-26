@@ -1,4 +1,4 @@
 export interface ITask {            // I denotes Interface of Task
-    task:string;
+    taskName:string;
     deadline:number;
 }
